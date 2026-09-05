@@ -5,7 +5,7 @@ class Solution {
         while(start<next){
             int area = Math.min(height[start], height[next])*(next-start);
             if(area>finalArea){finalArea=area;}
-            else if(height[start]<height[next]){
+            if(height[start]<height[next]){
                 start++;
             }
             else{next--;}
